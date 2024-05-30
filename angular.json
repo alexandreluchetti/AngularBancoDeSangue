@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "banco-de-sangue"
+    }
+  },
+  "defaultProject": "banco-de-sangue",
+  "cli": {
+    "analytics": false
+  }
 }
