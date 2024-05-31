@@ -1,10 +1,42 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="pessoas" routerLinkActive="active" class="nav-link">Lista de pessoas</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="cria-pessoa" routerLinkActive="active" class="nav-link">Inserir pessoa</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="pessoas-por-estado" routerLinkActive="active" class="nav-link">Quantidade de pessoas por estado</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="imc-medio-por-decada" routerLinkActive="active" class="nav-link">IMC medio em cada faixa de dez em dez anos</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="obesos-por-sexo" routerLinkActive="active" class="nav-link">Obesos por sexo</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="media-idade-por-cada-sangue" routerLinkActive="active" class="nav-link">Media de idade para cada tipo sanguineo</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="quantidade-doadores-para-cada-tipo-sanguineo-receptor" routerLinkActive="active" class="nav-link">Quantidade de possíveis doadores para cada tipo sanguíneo receptor</a>
+        </li>
+
+    </ul>
+</nav>
+
 <h1 class="text-center">{{title}}</h1>
 
-<div class="container">
-    <app-doadores-para-cada-sangue-receptor></app-doadores-para-cada-sangue-receptor>
-    <app-pessoas-por-estado></app-pessoas-por-estado>
-    <app-imc-por-decada></app-imc-por-decada>
-    <app-media-idade-por-tipo-sanguineo></app-media-idade-por-tipo-sanguineo>
-    <app-obesos-por-sexo></app-obesos-por-sexo>
-    <app-pessoa-list></app-pessoa-list>
-</div>
+<router-outlet></router-outlet>
+
+<!-- <footer class="footer">
+    <div class="container">
+        <span>All Rights Reserved 2024 @lucchetta</span>
+    </div>
+</footer> -->

@@ -9,6 +9,8 @@ import { MediaIdadePorTipoSanguineoComponent } from './media-idade-por-tipo-sang
 import { ImcPorDecadaComponent } from './imc-por-decada/imc-por-decada.component';
 import { PessoasPorEstadoComponent } from './pessoas-por-estado/pessoas-por-estado.component';
 import { DoadoresParaCadaSangueReceptorComponent } from './doadores-para-cada-sangue-receptor/doadores-para-cada-sangue-receptor.component';
+import { CriaPessoaComponent } from './cria-pessoa/cria-pessoa.component';
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { DoadoresParaCadaSangueReceptorComponent } from './doadores-para-cada-sa
     MediaIdadePorTipoSanguineoComponent,
     ImcPorDecadaComponent,
     PessoasPorEstadoComponent,
-    DoadoresParaCadaSangueReceptorComponent
+    DoadoresParaCadaSangueReceptorComponent,
+    CriaPessoaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
