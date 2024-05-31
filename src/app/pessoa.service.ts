@@ -9,7 +9,8 @@ import { Pessoa } from './pessoa';
 export class PessoaService {
 
   private baseUrl = "http://localhost:8080/v1/bancodesangue/pessoas";
-  private registraPessoaUrl = "http://localhost:8080/v1/bancodesangue/envia/pessoas";
+  private registraPessoaUrl = "http://localhost:8080/v1/bancodesangue/envia/pessoa";
+  private registraPessoasUrl = "http://localhost:8080/v1/bancodesangue/envia/pessoas";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -20,6 +21,11 @@ export class PessoaService {
   registraPessoa(pessoa: Pessoa): Observable<Object> {
     console.log(pessoa)
     return this.httpClient.post(`${this.registraPessoaUrl}`, pessoa);
+  }
+
+  registraPessoas(pessoas: Pessoa[]): Observable<Object> {
+    console.log(pessoas)
+    return this.httpClient.post(`${this.registraPessoasUrl}`, pessoas);
   }
 
 }

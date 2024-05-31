@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class CriaPessoaComponent implements OnInit {
 
   pessoa: Pessoa = new Pessoa();
+  pessoas: Pessoa[] = [];
 
   constructor(
     private pessoaService: PessoaService,
@@ -28,6 +29,23 @@ export class CriaPessoaComponent implements OnInit {
       this.goToListaPessoa();
     });
     error => console.log(error);
+  }
+
+  onFileChange(event) {
+    const file = event.target.files[0];
+    let reader = new FileReader();
+    reader.onload = () => {
+      let text = reader.result.toString();
+      console.log(text); 
+      this.pessoas = JSON.parse(text);
+      console.log(this.pessoas);
+
+      this.pessoaService.registraPessoas(this.pessoas).subscribe(data => {
+        console.log(data);
+        this.goToListaPessoa();
+      });
+    }
+    reader.readAsText(file);
   }
 
   goToListaPessoa() {

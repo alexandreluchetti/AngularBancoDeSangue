@@ -13,4 +13,15 @@
 
 .table-sm-font {
     font-size: 0.750rem;
-  }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 70px; 
+}

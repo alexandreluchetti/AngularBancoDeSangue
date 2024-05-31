@@ -1,6 +1,15 @@
 <div class="col-md-6 offset-md-3">
-    <h3>Registrar uma pessoa</h3>
+    <h3>Registrar várias pessoas</h3>
 
+    <div class="form-group">
+        <label for="file">Selecione o arquivo .json para fazer upload:</label>
+        <input class="px-2" type="file" id="file" (change)="onFileChange($event)"/>
+    </div>
+
+    <div class="border-top my-5"></div>
+
+    <h3 class="mt-3">Registrar uma pessoa</h3>
+    <p>Insira os dados manualmente</p>
     <form (ngSubmit) = "onSubmit()">
 
         <div class="form-group">
@@ -19,13 +28,12 @@
         </div>
 
         <div class="form-group">
-            <label>Datade nascimento</label>
+            <label>Data de nascimento</label>
             <input type="text" class="form-control" id="data_nasc" [(ngModel)] = "pessoa.data_nasc" placeholder="dd/mm/aaaa" name="data_nasc" required>
         </div>
 
         <div class="form-group">
             <label>Sexo</label>
-            <!-- <input type="text" class="form-control" id="rg" [(ngModel)] = "pessoa.rg" required> -->
             <select class="form-select" aria-label="Default select example" id="sexo" [(ngModel)] = "pessoa.sexo" name="sexo" required>
                 <option selected disabled>Sexo</option>
                 <option value="MASCULINO">Masculino</option>
@@ -34,7 +42,7 @@
         </div>
 
         <div class="form-group">
-            <label>Nome da mae</label>
+            <label>Nome da mãe</label>
             <input type="text" class="form-control" id="mae" [(ngModel)] = "pessoa.mae" name="mae" required>
         </div>
 
@@ -99,10 +107,9 @@
         </div>
 
         <div class="form-group">
-            <label>Tipo sanguineo</label>
-            <!-- <input type="number" class="form-control" id="peso" [(ngModel)] = "pessoa.peso" required> -->
+            <label>Tipo sanguíneo</label>
             <select class="form-select" aria-label="Default select example" id="tipo_sanguineo" [(ngModel)] = "pessoa.tipo_sanguineo" name="tipo_sanguineo" required>
-                <option selected disabled>Tipo sanguineo</option>
+                <option selected disabled>Tipo sanguíneo</option>
                 <option value="A+">A+</option>
                 <option value="A-">A-</option>
                 <option value="B+">B+</option>
@@ -114,7 +121,7 @@
             </select>
         </div>
 
-        <button class="btn btn-success" type="submit">Cadastrar</button>
+        <button class="btn btn-success mt-3 mb-3" type="submit">Cadastrar</button>
 
     </form>
 </div>
