@@ -47,13 +47,13 @@ http://localhost:4200/
 ```
 
 ## Leyout web
-![](src/assets/images/Screenshot from 2024-05-31 15-31-30.png)
-![](src/assets/images/Screenshot from 2024-05-31 15-31-51.png)
-![](src/assets/images/Screenshot from 2024-05-31 15-32-03.png)
-![](src/assets/images/Screenshot from 2024-05-31 15-32-11.png)
-![](src/assets/images/Screenshot from 2024-05-31 15-32-19.png)
-![](src/assets/images/Screenshot from 2024-05-31 15-32-24.png)
-![](src/assets/images/Screenshot from 2024-05-31 15-32-29.png)
+<img src="src/assets/images/Screenshot from 2024-05-31 15-31-30.png">
+<img src="src/assets/images/Screenshot from 2024-05-31 15-31-51.png">
+<img src="src/assets/images/Screenshot from 2024-05-31 15-32-03.png">
+<img src="src/assets/images/Screenshot from 2024-05-31 15-32-11.png">
+<img src="src/assets/images/Screenshot from 2024-05-31 15-32-19.png">
+<img src="src/assets/images/Screenshot from 2024-05-31 15-32-24.png">
+<img src="src/assets/images/Screenshot from 2024-05-31 15-32-29.png">
 
 ## Autor
 Alexandre Lucchetta
