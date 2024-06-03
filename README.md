@@ -1,5 +1,7 @@
 # AngularBancoDeSangue
 
+Imagem da aplicação: `docker pull alexandreluchetti/angular-banco-de-sangue:1.0.0`
+
 Este frontend em Angular serve como uma interface para a API de um banco de sangue. Ele permite gerenciar doadores, receptores e transações de sangue, fornecendo diversas funcionalidades para a administração eficiente do banco de sangue. Abaixo estão as principais características e funcionalidades do frontend.
 
 ## Funcionalidades Principais
@@ -21,6 +23,7 @@ Este frontend em Angular serve como uma interface para a API de um banco de sang
 - Bootstrap: Framework de CSS para estilização e design responsivo.
 - Node.js: Ambiente de execução JavaScript server-side.
 - npm: Gerenciador de pacotes para JavaScript, usado para instalar bibliotecas e ferramentas necessárias para o projeto.
+- Docker: Utilizado para executar a aplicação em container.
 
 ## Instalação
 - Este projeto foi desenvolvido utilizando `Angular CLI v10.0.7`, `Node.js v12.18.2` e `npm v6.14.5`;
