@@ -28,26 +28,11 @@ Este frontend em Angular serve como uma interface para a API de um banco de sang
 ## Instalação
 - Este projeto foi desenvolvido utilizando `Angular CLI v10.0.7`, `Node.js v12.18.2` e `npm v6.14.5`;
 - Baixe e instale o Angular CLI, Node.js e npm;
-- Clonar repositório: 
-```sh
-https://github.com/alexandreluchetti/AngularBancoDeSangue.git
-```
-- Navegar até o Diretório do Projeto: 
-```sh
-cd banco-de-sangue/
-```
-- Instalar dependências: 
-```sh
-npm install
-```
-- Iniciar o servidor de desenvolvimento: 
-```sh
-ng serve
-```
-- Abra o navegador e acesse 
-```sh
-http://localhost:4200/
-```
+- Clonar repositório: `https://github.com/alexandreluchetti/AngularBancoDeSangue.git`
+- Navegar até o Diretório do Projeto: `cd banco-de-sangue/`
+- Instalar dependências: `npm install`
+- Iniciar o servidor de desenvolvimento: `ng serve`
+- Abra o navegador e acesse `http://localhost:4200/`
 
 ## Leyout web
 <img src="src/assets/images/Screenshot from 2024-05-31 15-31-30.png">
