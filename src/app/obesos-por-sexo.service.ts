@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ObesosPorSexoService {
 
-  private baseUrl = "http://localhost:8080/v1/bancodesangue/percentual/obesos/sexo";
+  private baseUrl = "http://localhost:8303/v1/bancodesangue/percentual/obesos/sexo";
 
   constructor(private httpClient: HttpClient) { }
 

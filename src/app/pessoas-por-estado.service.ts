@@ -8,7 +8,7 @@ import { MediaIdadePorTipoSanguineo } from './media-idade-por-tipo-sanguineo'
 })
 export class PessoasPorEstadoService {
 
-  private baseUrl = "http://localhost:8080/v1/bancodesangue/pessoas/estados";
+  private baseUrl = "http://localhost:8303/v1/bancodesangue/pessoas/estados";
 
   constructor(private httpClient: HttpClient) { }
 

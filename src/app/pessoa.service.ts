@@ -8,13 +8,14 @@ import { Pessoa } from './pessoa';
 })
 export class PessoaService {
 
-  private baseUrl = "http://localhost:8080/v1/bancodesangue/pessoas";
-  private registraPessoaUrl = "http://localhost:8080/v1/bancodesangue/envia/pessoa";
-  private registraPessoasUrl = "http://localhost:8080/v1/bancodesangue/envia/pessoas";
+  private baseUrl = "http://localhost:8303/v1/bancodesangue/pessoas";
+  private registraPessoaUrl = "http://localhost:8303/v1/bancodesangue/pessoa";
+  private registraPessoasUrl = "http://localhost:8303/v1/bancodesangue/pessoas";
 
   constructor(private httpClient: HttpClient) { }
 
   getPessoas(): Observable<Pessoa[]> {
+    console.log(this.baseUrl)
     return this.httpClient.get<Pessoa[]>(`${this.baseUrl}`)
   }
 

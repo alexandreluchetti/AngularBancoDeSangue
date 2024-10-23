@@ -8,7 +8,7 @@ import { MediaIdadePorTipoSanguineo } from './media-idade-por-tipo-sanguineo'
 })
 export class DoadoresParaCadaSangueReceptorService {
 
-  private baseUrl = "http://localhost:8080/v1/bancodesangue/quantidade/doadores/tiposanguineo/receptor";
+  private baseUrl = "http://localhost:8303/v1/bancodesangue/quantidade/doadores/tiposanguineo/receptor";
 
   constructor(private httpClient: HttpClient) { }
 
